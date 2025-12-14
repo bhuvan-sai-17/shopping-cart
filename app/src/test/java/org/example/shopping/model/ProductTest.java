@@ -12,6 +12,4 @@ public class ProductTest {
     assertEquals("Apple", product.getName());
     assertEquals(10.0, product.getPrice());
   }
-
-  
 }
