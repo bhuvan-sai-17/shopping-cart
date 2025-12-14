@@ -1,5 +1,7 @@
 package org.example.shopping.model;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 public class ProductTest {
@@ -8,7 +10,8 @@ public class ProductTest {
     Product product = new Product("p1","Apple",10.0);
     assertEquals("p1", product.getId());
     assertEquals("Apple", product.getName());
-    asserEquals(10.0, product.getPrice());
+    assertEquals(10.0, product.getPrice());
+  }
 
-  }  
+  
 }

@@ -11,6 +11,16 @@ public class Product {
     this.price = price;
   }
 
-  // getters intentionally unimplemented
+  public String getId() {
+    return this.id;
+  }
   
+  public String getName() {
+    return this.name;
+  }
+
+  public Double getPrice() {
+    return this.price;
+  }
+
 }
