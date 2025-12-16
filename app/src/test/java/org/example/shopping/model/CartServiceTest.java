@@ -10,7 +10,7 @@ import static org.mockito.Mockito.*;
 class CartServiceTest {
 
   @Test
-  void addsProductToCartWhenInventoryHasStock() {
+  void testAddsProductToCartWhenInventoryHasStock() {
     // Arrange
     InventoryService inventory = mock(InventoryService.class);
     ShoppingCart cart = new ShoppingCart();
