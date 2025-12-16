@@ -9,5 +9,15 @@ public class CartItem {
     this.quantity = quantity;
   }
 
-  // getters intentionally unimplemented
+  public Product getProduct() {
+    return product;
+  }
+
+  public int getQuantity() {
+    return quantity;
+  }
+
+  public double getSubtotal() {
+    return product.getPrice() * quantity;
+  }
 }
