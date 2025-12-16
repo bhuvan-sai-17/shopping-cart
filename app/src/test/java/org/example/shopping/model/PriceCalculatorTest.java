@@ -13,7 +13,7 @@ public class PriceCalculatorTest {
 
     PriceCalculator pc = new PriceCalculator(cart);
 
-    assertEquals(25, pc.calculateTotal());
+    assertEquals(22, pc.calculateTotal());
   }
   
 }

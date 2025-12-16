@@ -7,8 +7,7 @@ public class PriceCalculator {
     this.cart = cart;
   }
 
-  // intentionally unimplemented getters
   public double calculateTotal() {
-    return 0;
+    return cart.getTotal();
   }
 }
