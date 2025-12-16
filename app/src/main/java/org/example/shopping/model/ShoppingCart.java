@@ -11,15 +11,23 @@ public class ShoppingCart {
   public ShoppingCart() {}
 
   public void addProduct(Product product, int quantity) {
+    CartItem existing = findItem(product);
+    if (existing != null) {
+      items.remove(existing);
+      items.add(new CartItem(product, existing.getQuantity() + quantity));
+    } else {
+      items.add(new CartItem(product, quantity));
+    }
+
+  }
+
+  private CartItem findItem(Product product) {
     for (CartItem item: items) {
       if (item.getProduct().equals(product)) {
-        // increase quantity if the product is already a cart item
-        items.remove(item);
-        items.add(new CartItem(product, item.getQuantity() + quantity));
-        return;
+        return item;
       }
     }
-    items.add(new CartItem(product, quantity));
+    return null;
   }
 
   public List<CartItem> getItems() {
