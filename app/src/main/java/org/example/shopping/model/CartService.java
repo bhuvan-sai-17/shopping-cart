@@ -1,6 +1,5 @@
 package org.example.shopping.model;
 
-
 public class CartService {
 
   private final ShoppingCart cart;

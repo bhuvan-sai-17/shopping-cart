@@ -9,7 +9,6 @@ class CartServiceTest {
 
   @Test
   void testAddsProductToCartWhenInventoryHasStock() {
-    // Arrange
     InventoryService inventory = mock(InventoryService.class);
     ShoppingCart cart = new ShoppingCart();
     CartService cartService = new CartService(cart, inventory);
