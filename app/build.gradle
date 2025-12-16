@@ -45,5 +45,5 @@ jacocoTestReport {
 }
 
 application {
-    mainClass = 'com.example.shopping.ui.ConsoleApp'
+    mainClass = 'org.example.App'
 }
