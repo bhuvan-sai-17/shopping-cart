@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class PriceCalculatorTest {
+  
   @Test
   void testCalculateTotalPriceFromShoppingCart() {
     ShoppingCart cart = new ShoppingCart();
