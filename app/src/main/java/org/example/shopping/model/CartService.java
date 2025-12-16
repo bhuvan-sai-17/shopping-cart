@@ -1,7 +1,5 @@
 package org.example.shopping.model;
 
-import org.example.shopping.model.Product;
-import org.example.shopping.model.ShoppingCart;
 
 public class CartService {
 
