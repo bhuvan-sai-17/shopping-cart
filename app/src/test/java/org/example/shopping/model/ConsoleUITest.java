@@ -17,7 +17,7 @@ import static org.mockito.Mockito.*;
 class ConsoleUITest {
 
   @Test
-  void userCanAddProductViaConsole() {
+  void testUserCanAddProductViaConsole() {
     InventoryService inventory = mock(InventoryService.class);
     ShoppingCart cart = new ShoppingCart();
     CartService cartService = new CartService(cart, inventory);
