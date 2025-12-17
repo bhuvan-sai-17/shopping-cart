@@ -31,7 +31,8 @@ class ConsoleUITest {
     ConsoleUI ui = new ConsoleUI(
         cartService,
         new PrintStream(out),
-        in);
+        in
+      );
 
     ui.start();
 
