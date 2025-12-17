@@ -13,6 +13,9 @@ public class CartService {
   }
 
   public void addProduct(Product product, int quantity) {
+    if (product.getPrice() <= 0) {
+      throw new IllegalArgumentException("Product price must be positive");
+    }
     if (inventory.isInStock(product, quantity)) {
       cart.addProduct(product, quantity);
     }
