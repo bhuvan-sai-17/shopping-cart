@@ -16,9 +16,8 @@ public class ConsoleUI {
   }
 
   public void start() {
-    
     while (true) {
-      System.out.println("Enter either add or exit");
+      out.println("Enter either add or exit");
       String command = scanner.nextLine();
 
       if (command.equalsIgnoreCase("exit")) {
@@ -34,9 +33,18 @@ public class ConsoleUI {
 
         Product product = new Product(id, name, price);
         cartService.addProduct(product, quantity);
+
+        out.println("Cart:");
+        for (CartItem item : cartService.getItems()) {
+          out.println("- "
+              + item.getProduct().getName()
+              + " x" + item.getQuantity()
+              + " (" + item.getProduct().getPrice() + ")");
+        }
       }
 
-      this.out.println("------");
+      out.println("------");
     }
   }
+
 }

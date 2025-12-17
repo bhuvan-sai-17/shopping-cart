@@ -1,5 +1,7 @@
 package org.example.shopping.model;
 
+import java.util.List;
+
 public class CartService {
 
   private final ShoppingCart cart;
@@ -14,5 +16,9 @@ public class CartService {
     if (inventory.isInStock(product, quantity)) {
       cart.addProduct(product, quantity);
     }
+  }
+
+  public List<CartItem> getItems() {
+    return cart.getItems();
   }
 }

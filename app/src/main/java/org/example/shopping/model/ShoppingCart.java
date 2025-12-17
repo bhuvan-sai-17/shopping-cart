@@ -31,7 +31,7 @@ public class ShoppingCart {
   }
 
   public List<CartItem> getItems() {
-    return Collections.unmodifiableList(items);
+    return new ArrayList<>(items);
   }
 
   public double getTotal() {
