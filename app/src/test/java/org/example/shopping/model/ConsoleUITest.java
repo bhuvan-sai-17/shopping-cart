@@ -1,9 +1,9 @@
 package org.example.shopping.model;
 
-import org.example.shopping.model.Product;
-import org.example.shopping.model.ShoppingCart;
-import org.example.shopping.model.CartService;
-import org.example.shopping.model.InventoryService;
+// import org.example.shopping.model.Product;
+// import org.example.shopping.model.ShoppingCart;
+// import org.example.shopping.model.CartService;
+// import org.example.shopping.model.InventoryService;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
