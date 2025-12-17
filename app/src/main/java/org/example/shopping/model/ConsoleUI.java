@@ -37,10 +37,10 @@ public class ConsoleUI {
         out.println("Cart:");
         showCartContents();
         // for (CartItem item : cartService.getItems()) {
-        //   out.println("- "
-        //       + item.getProduct().getName()
-        //       + " x" + item.getQuantity()
-        //       + " (" + item.getProduct().getPrice() + "each)");
+        // out.println("- "
+        // + item.getProduct().getName()
+        // + " x" + item.getQuantity()
+        // + " (" + item.getProduct().getPrice() + "each)");
         // }
       }
 
@@ -49,8 +49,12 @@ public class ConsoleUI {
   }
 
   public void showCartContents() {
-    
-}
+    for (CartItem item : cartService.getItems()) {
+      Product p = item.getProduct();
+      double price = p.getPrice();
+      out.println("- " + p.getName() + " x" + item.getQuantity() + " ($" + String.format("%.1f", price) + " each)");
 
+    }
+  }
 
 }

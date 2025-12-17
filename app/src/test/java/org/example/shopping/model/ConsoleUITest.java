@@ -40,7 +40,7 @@ class ConsoleUITest {
   }
 
   @Test
-  void showCartContentsPrintsAllItems() {
+  void testShowCartContentsPrintsAllItems() {
     ShoppingCart cart = mock(ShoppingCart.class);
     CartService service = mock(CartService.class);
     PrintStream out = mock(PrintStream.class);
@@ -55,7 +55,7 @@ class ConsoleUITest {
     ConsoleUI ui = new ConsoleUI(service, out, System.in);
     ui.showCartContents();
 
-    verify(out).printf("- Apple x2 ($10.00 )%n");
-    verify(out).printf("- Banana x3 ($5.00 )%n");
+    verify(out).println("- Apple x2 ($10.0 each)");
+    verify(out).println("- Banana x3 ($5.0 each)");
   }
 }
