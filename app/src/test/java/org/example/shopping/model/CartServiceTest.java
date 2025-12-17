@@ -29,13 +29,10 @@ class CartServiceTest {
     CartService cartService = new CartService(cart, mock(InventoryService.class));
     Product badProduct = new Product("P999", "InvalidProduct", -10.0);
 
-    // This should throw an exception
     try {
       cartService.addProduct(badProduct, 1);
       fail("Expected IllegalArgumentException for negative product price");
     } catch (IllegalArgumentException e) {
-      // Test passes if exception is thrown
-      // Optionally check the message
       assertEquals("Product price must be positive", e.getMessage());
     }
   }
