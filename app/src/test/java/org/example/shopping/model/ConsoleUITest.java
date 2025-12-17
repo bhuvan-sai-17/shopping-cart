@@ -41,7 +41,6 @@ class ConsoleUITest {
 
   @Test
   void testShowCartContentsPrintsAllItems() {
-    ShoppingCart cart = mock(ShoppingCart.class);
     CartService service = mock(CartService.class);
     PrintStream out = mock(PrintStream.class);
 

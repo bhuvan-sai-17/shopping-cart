@@ -36,12 +36,6 @@ public class ConsoleUI {
 
         out.println("Cart:");
         showCartContents();
-        // for (CartItem item : cartService.getItems()) {
-        // out.println("- "
-        // + item.getProduct().getName()
-        // + " x" + item.getQuantity()
-        // + " (" + item.getProduct().getPrice() + "each)");
-        // }
       }
 
       out.println("------");
